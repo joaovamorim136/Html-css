@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu proprio servidor</p>
+
+    <!--<video src="midia/meuvideo.mp4" width="500px" controls></video>-->
+    <!--Colocar os videos em varios formatos pra que tenha compatibilidade com a maioria dos navegadores, MP4 M4v WEBM OGG-->
+
+    <video width="560px" controls poster="imagens/4d722415-9cc0-460e-aef6-72d7af44bb4f.jpg">
+        <source src="midia/pizza.mp4" type="video/mp4">
+    </video>
+    <!--Parametro poster é a foto da thumb pra que não fique com o frame do video pausado-->
+
+    <h1>Inserindo video externos</h1>
+    <p>Videos hospedados no Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/278845039?h=db3f60482a&color=ffffff&title=0&byline=0&portrait=0" width="560" height="320" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p>videos hospedados no YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Sobre hospedagem interna no proprio servidor vai ser gasto mais banda pra ser visualizado os videos no site, agora se for externa como no YT ou no Vimeo não vai ser gasto essa banda e tera uma ampla navegação e busca pelos serviços de navegação-->
+</body>
+</html>

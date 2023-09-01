@@ -1,0 +1,19 @@
+/*DICA:
+    Shorthands Border e Outline - width > style > color
+*/
+h1 {
+    background-color: rgb(130, 130, 240);
+    height: 300px;
+    width: 300px;
+    border: 10px solid rgb(69, 214, 69);
+    outline: 5px dotted red;
+    padding: 10px 5px; /*CIMA DIREITA BAIXO ESQUERDA - 1 valor todos iguais, 2 valores CIMA/BAiXO - ESQUERDA/DIREITA 4 valores um pra cada*/
+    margin: 10px auto; /*Mesmo esquema do PADDING, o que muda que se usar o parametro "AUTO" ele centraliza na tela*/
+    
+}
+a {
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    padding: 5px;
+}

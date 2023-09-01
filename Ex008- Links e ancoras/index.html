@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e ancoras</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    <p>Você pode acessar o canal no do <a href="https://www.youtube.com/watch?v=gm-57AcpZhQ">Telescopio Subaru</a> no YouTube que transmite ao vivo os ceus do Hawaii</p>
+    <!--Dentro da tag de ancora A, colocar o site que vai ser referenciado, e o que esta dentro das chaves vai ser a palavra que leva o link-->
+
+    <p>Você pode acessar o canal no do <a href="https://www.youtube.com/watch?v=gm-57AcpZhQ" target="_blank" rel="external">Telescopio Subaru</a> no YouTube que transmite ao vivo os ceus do Hawaii</p>
+    <!--Nesse caso o parametro TARGET, ele indica que o link que requisitado vai ser aberto em outra pagina não sobrescrevendo a anterior, e o REL indica que o link em questão vem de uma outra pagina fora da que está no momento-->
+    <!--LEMBRETE: Sempre utilizar dessa forma, pra sempre manter na mesma navegação não abrindo uma nova emcima-->
+
+    <h1>Links internos</h1>
+    <p>Está é a pagina principal, caso queira pode visitar a <a href="pag02.html" rel="NEXT" target="_self">segunda paginha</a></p>
+    <!--usar as tags REL > NEXT e REL > PREV pra demonstrar a "sequencia" das paginas-->
+
+    <p>Está é a pagina principal, caso queira pode visitar a <a href="./ntcs/pag03.html" rel="NEXT" target="_self">terceira paginha</a></p>
+    <!--No caso qndo for fazer o link pra propria pagina pode deixar o parametro target vazio ou colocar o target como SELF, bom colocar pra ficar mais semantico e melhor pra buscas-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="PDF/01 - História da Internet.pdf" download="PDF/01 - História da Internet.pdf" type="application/PDF">Baixar o PDF</a></li>
+        <li><a href="PDF/01 - História da Internet.zip" download="PDF/01 - História da Internet.zip" type="application/ZIP">Baixar o ZIP</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

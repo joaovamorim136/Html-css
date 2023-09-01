@@ -1,0 +1,24 @@
+div {
+    display: inline-block;
+    background-color: rgb(120, 116, 172);
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    color: yellow;
+} /*Modo de exemplo de como funciona um menu interativo*/
+div:hover {
+    color: red;
+    background-color: green;
+}
+
+/*PSEUDO classes :
+  PSEUDO elementos ::
+  mostra o que vem antes e depois do elemento selecionado
+*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        
+        @font-face {
+            font-family: 'OldLondon'; /*Nome que dara pra fonte pra ser usado*/ 
+            src: url('fonts/OldLondon.ttf') format('truetype'), 
+                    url('fonts/OldLondonAlternate.ttf') format('truetype'), 
+                        url('fonts/Olondon_.otf') format('opentype'), 
+                            url('fonts/Olondona.otf') format('opentype');
+            font-weight: normal; 
+            font-style: normal;    
+            /*Definir peso e stilo como normal pra não ficar como negtrito ou italico, mas ainda sim qndo for usar a fonte colocar peso e estilo normal pra ter certeza que não estara com mudanças*/                        
+        }
+        /*
+        Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opetype
+            -truetype-aat (Apple advanced typography)
+            -svg
+        */
+        body {
+            font-family: 'OldLondon', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1 {
+            font-family: 'OldLondon', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis. Quisquam error dolor hic deserunt debitis cupiditate soluta perferendis officia, iusto sunt sint aliquam nam sapiente enim asperiores, molestiae ab? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, molestiae eligendi nesciunt nobis quisquam in veniam excepturi ipsum voluptatum voluptatibus animi facilis impedit voluptas architecto odit illo vero dolore commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, velit tenetur officia porro enim id optio aspernatur aut qui nemo unde nostrum, natus eos. Dicta reiciendis animi libero mollitia ab!</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping TAGS</title>
+    <style>
+        body {
+            background-color: #3abfe7;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+    
+        }
+        header {
+            background-color: #9ed7e9;
+            padding: 2px;
+            margin: 5px;
+        }
+        nav {
+            background-color: rgb(6, 46, 180);
+            padding: 2px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.521); /*Deslocamento horizontal, deslocamento vertical, espalhamento e a cor, DICA sempre sombra preta e colocando um pouco de transparencia ela*/
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin-left: 5px;
+
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: #9ed7e9;
+            padding: 2px;
+            margin: 5px;
+            border-radius: 10px 20px; /*Os valores são em diagonal, cima/esquera - direita baixo*/
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.521);
+        }
+        article > aside {
+            background-color: aqua;
+            border-radius: 3px;
+            width: 150px;
+        }
+        footer {
+            background-color: rgb(0, 0, 90);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sed error quod esse, at quia odit facere tempora autem in tenetur optio facilis sequi nam asperiores laudantium impedit praesentium ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui at corporis. Alias odio saepe sunt dolores nobis adipisci id ipsum ex inventore ad, officiis reiciendis optio quia! Mollitia, delectus!</p>
+                <aside>
+                    <p>Artigo escrito por mim</p>
+            
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por mim</p>
+    </footer>
+</body>
+</html>
