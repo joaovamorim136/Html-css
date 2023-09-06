@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: blueviolet;
+            position: relative;/*A  position por padrao sempre vem com o relative*/
+            height: 98vh;
+            padding: 10px;
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: yellowgreen;
+            position: absolute;/*position absoluta ela pode ser movida sobre os elementos da pagina*/
+            /*Com o absoute pode ser usado o top e o left pra direcionar a imagem*/
+            top: 50%;
+            left: 50%;
+
+            height: 200px;
+            width: 400px;
+
+            transform: translate(-50%, -50%); 
+            /*
+                Parametros positivos eles movem primeiro pra direita e segundo pra baixo
+                Parametros negativos eles movem primeiro pra esquerda e segundo pra cima
+
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
