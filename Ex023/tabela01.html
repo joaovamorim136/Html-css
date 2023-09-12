@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table {
+            border: 5px solid red;
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse; /*usado pra quebrar a separação de um dado pro outro da tabela*/
+        }
+        tr {
+            background-color: rgb(112, 112, 112);
+        }
+        td {
+            border: 3px solid rgb(0, 14, 59);
+            padding: 3px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .importante {
+            background-color: yellow;
+        }
+        .numero {
+            text-align: right;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de tabela</h1>
+    <!--
+        Hierarquia de tabelas
+        TABLE - tabela
+            TABLE ROW - linda da tabela
+            TABLE HEADER - cabeçalho da tabeça
+            TABLE DATA - dados da tabela
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td class="importante numero">D1</td>
+            <td>E1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="importante numero">B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td class="importante numero">A4</td>
+            <td>B4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+        </tr>
+    </table>
+</body>
+</html>
