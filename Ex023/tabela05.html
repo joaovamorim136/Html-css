@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        col.cnome{
+            background-color: aqua;
+        }
+        .vermelho {
+            background-color: red;
+        }
+        .amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <caption>Profissões</caption>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="amarelo" span="2">
+            <col class="vermelho">
+        </colgroup>
+
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>F</td>
+            <td>Desenvolvedora</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>18</td>
+            <td>F</td>
+            <td>Veterinaria</td>
+        </tr>
+        <tr>
+            <td>Joao</td>
+            <td>31</td>
+            <td>M</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Sergio</td>
+            <td>45</td>
+            <td>M</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Sandra</td>
+            <td>55</td>
+            <td>F</td>
+            <td>Empreendedora</td>
+        </tr>
+    </table>
+</body>
+</html>
