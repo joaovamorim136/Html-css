@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação em iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        ul {
+            columns: 3;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: rgb(0, 0, 0);
+        }
+        iframe {
+            width: 98vw;
+            height: 55vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Escolha sua Vanguarda</h1>
+    <p>A Vanguarda são Guardiões de elite que coordenam as defesas da Última Cidade, organizam ataques a fortalezas inimigas e assassinatos de seus líderes, e orientam Guardiões recém-ressuscitados. Alguns Guardiões trabalham diretamente para a Vanguarda como batedores, investigando possíveis ameaças à Cidade em locais distantes.</p>
+
+    <ul style="list-style: none;">
+        <li><a href="vanguarda/zavala.html" target="frame">Zavala - Titans</a></li>
+        <li><a href="vanguarda/ikora.html" target="frame">Ikora - Arcanos</a></li>
+        <li><a href="vanguarda/cayde.html" target="frame">Cayde-6 - Caçadores</a></li>
+    </ul>
+
+    <iframe name="frame" src="vanguarda/imagens/vanguarda.jpg"></iframe> <!--no lugar do src, o srdoc cria um novo html dentro dele pode ser feito a mão ou linkado de outra pagina-->
+</body>
+</html>
